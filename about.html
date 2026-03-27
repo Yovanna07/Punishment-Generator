@@ -1,78 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - El Lado Oscuro</title>
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - El Lado Oscuro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="about">
-    <audio id="musicaFondo" autoplay loop>
-  <source src="audio/scary-music-box-165983.mp3" type="audio/mpeg">
-  Tu navegador no soporta audio HTML5.
-</audio>
+
+  <audio id="musicaFondo" autoplay loop>
+        <source src="audio/suspense-terror.mp3" type="audio/mpeg">
+        
+    </audio>
     <!-- HEADER -->
     <header>
         <h2>Bienvenido a la Oscuridad</h2>
         <nav class="menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="principal.html">Juego principal</a></li>
+                <li><a href="parejas.html">Juego parejas</a></li>
                 <li><a href="about.html">About Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- VIDEO DE FONDO -->
-    <video id="bg-video" src="imagenes/velas.mp4" autoplay muted loop playsinline></video>
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <div class="contenido">
-        <h1 class="terror">About Us</h1>
 
-        <p class="terror" style="font-size:1.8rem;">
-            Somos los creadores de tus mas profundos temores
-            y mas oscuros deseos.  Ya es hora que le pongas
-            cara a tu sufrimiento😈!!
-        </p>
+  <!-- VIDEO DE FONDO -->
+  <video id="bg-video" src="imagenes/velas.mp4" autoplay muted loop playsinline></video>
 
-    <div class="contenedor-imagenes">
-        <img src="imagenes/ficha_karol1.png"
-            alt="Karol"
-            class="clic-para-cambiar"
-            data-alt-src="imagenes/ficha_karol2.jpg">
+  <!-- CONTENIDO PRINCIPAL -->
+  <div class="contenido">
+    <h1 class="terror">About Us</h1>
 
-        <img src="imagenes/ficha fer.jpg.png" 
-            alt="Fernando"
-            class="clic-para-cambiar"
-            data-alt-src="imagenes/ficha_fer2">
+    <p class="terror" style="font-size:1.8rem;">
+      Somos los creadores de tus mas profundos temores
+      y mas oscuros deseos. Ya es hora que le pongas
+      cara a tu sufrimiento😈!!
+    </p>
 
-        <img src="imagenes/ficha Yova.jpg.png" 
-            alt="Yovanna"
-            class="clic-para-cambiar"
-            data-alt-src="imagenes/ficha_yova2">
-
-        <img src="imagenes/ficha raul.jpg.png" 
-            alt="Raul"
-            class="clic-para-cambiar"
-            data-alt-src="imagenes/ficha_raul2">
-</div>
-       
-        <a href="index.html" class="boton-miedo">🔪 Volver al Inicio</a>
-    </div>
-
-    <script>
-  window.addEventListener('click', () => {
-    const audio = document.getElementById('musicaFondo');
-    if (audio && audio.paused) {
-      audio.play();
-    }
-  });
-</script>
-
+    <div class="contenedor-fichas">
 
   
+  <div class="ficha">
+    <p class="nombre-ficha">Karol</p>
+    <img class="ficha-interactiva" id="ficha_karol" src="imagenes/ficha_karol_1.png" alt="Ficha Karol">
+    <div class="redes">
+      <a href="https://www.linkedin.com/in/karol-kusmierz-b620b1367/" target="_blank" aria-label="LinkedIn Karol">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/karolkusmi" target="_blank" aria-label="GitHub Karol">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+  </div>
+
+  
+  <div class="ficha">
+    <p class="nombre-ficha">Fer</p>
+    <img class="ficha-interactiva" id="ficha_fer" src="imagenes/ficha_fer_1.png" alt="Ficha Fer">
+    <div class="redes">
+      <a href="https://www.linkedin.com/in/fernando-david-del-rio-96b71168/" target="_blank" aria-label="LinkedIn Fer">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/fernando-delrio" target="_blank" aria-label="GitHub Fer">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+  </div>
+
+  
+  <div class="ficha">
+    <p class="nombre-ficha">Yova</p>
+    <img class="ficha-interactiva" id="ficha_yova" src="imagenes/ficha_Yova_1.png" alt="Ficha Yova">
+    <div class="redes">
+      <a href="https://www.linkedin.com/in/yova-linkedin" target="_blank" aria-label="LinkedIn Yova">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/yova-github" target="_blank" aria-label="GitHub Yova">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+  </div>
+
+  
+  <div class="ficha">
+    <p class="nombre-ficha">Raul</p>
+    <img class="ficha-interactiva" id="ficha_raul" src="imagenes/ficha_raul_1.png" alt="Ficha Raul">
+    <div class="redes">
+      <a href="https://www.linkedin.com/in/raul-linkedin" target="_blank" aria-label="LinkedIn Raul">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/raul-github" target="_blank" aria-label="GitHub Raul">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+
+
+  <script src="script.js"></script>
 
 </body>
+
 </html>

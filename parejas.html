@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Fuente gótica -->
+    <title>Generador de Torturas</title>
     <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
-    <!-- Iconos cuchillo -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>Entrada de terror</title>
 </head>
-<body>
 
+<body class="principal">
     <audio id="musicaFondo" autoplay loop>
-    <source src="audio/scary-music-box-165983.mp3" type="audio/mpeg">
-    
-</audio>
-   
+        <source src="audio/scary-halloween-horror-music-421077.mp3" type="audio/mpeg">
+        
+    </audio>
 
-
-   <header>
-        <h2>Bienvenido al Mundo del Horror</h2>
+    <!-- HEADER -->
+    <header>
+        <h2>El rincón de los juegos picantes </h2>
         <nav class="menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -30,20 +27,24 @@
             </ul>
         </nav>
     </header>
-    <!-- Video de fondo -->
+
+    <!-- VIDEO DE FONDO -->
     <video id="bg-video" src="imagenes/velas.mp4" autoplay muted loop playsinline></video>
 
-    <!-- Contenido principal -->
-    <div class="contenido">
-        <h1 class="terror">Bienvenidos</h1>
-        <p class="terror">Solo las parejas más atrevidas pueden entrar...</p>
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="contenido" id="generador">
+        <h1 class="terror">Generador de Torturas para Parejas</h1>
+        <p class="terror" id="excusa">Pulsar un botón… si os atreveis </p>
 
-        <!-- Botón de entrada terrorífico -->
-        <a href="principal.html" class="boton-miedo">
-            <i class="fas fa-knife"></i> Entrar
-        </a>
+        <div class="botones-tortura">
+            <button type="button" class="boton-miedo" onclick="mostrarPtortura()">🔪 Tortura </button>
+        </div>
     </div>
-    
+
+   
+
+
     <script src="script.js"></script>
 </body>
+
 </html>
